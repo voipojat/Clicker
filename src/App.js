@@ -57,7 +57,7 @@ function App() {
         {show === true ? <div style={{ fontSize: "3rem", fontWeight: "bold" }}>You just won {reward} points!!</div> : null}
         {clicked === true && show === false ? <div style={{ fontSize: "2rem" }}>Clicks needed for next prize: <p style={{ fontWeight: "bold" }}>{win - gamePoints} </p></div> : null}
       </div> : null}
-      {lostMessage === true ? <div style={{ textAlign: "center", marginTop: "200px", fontSize: "3rem" }}>
+      {lostMessage === true ? <div style={{ textAlign: "center", fontSize: "3rem" }}>
         <div >You ran out of points! :(</div>
         <div>Wanna try again? :)</div>
         <button onClick={startOver} className="btn btn-primary">Yes!</button>
